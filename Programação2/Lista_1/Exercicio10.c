@@ -6,3 +6,4 @@ fumante perde 10 minutos de vida a cada cigarro, calcule quantos dias de vida um
 perderá. Exiba o total de dias.
 
 */
+
