@@ -1,6 +1,10 @@
 # Trabalho de Matemática Discreta
-
-![Badge de Status](https'://img.shields.io/badge/status-conclu%C3%ADdo-green')
+<img 
+    alt="GitHub Stats" 
+    height="30" 
+    style="padding-right: 10px;" 
+    src="https'://img.shields.io/badge/status-conclu%C3%ADdo-green'" 
+    />
 
 ---
 
