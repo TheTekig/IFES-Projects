@@ -1,4 +1,4 @@
-# Trabalho de Matemática Discreta
+# SEGUNDO PERIODO S.I.
 <img 
     alt="GitHub Stats" 
     height="30"
