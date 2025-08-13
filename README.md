@@ -1,6 +1,6 @@
 # Trabalho de Matemática Discreta
 
-![Badge de Status](https'://img.shields.io/badge/status-conclu%C3%ADdo-green')
+![Badge de Status](src = https'://img.shields.io/badge/status-conclu%C3%ADdo-green')
 
 ## 📝 Descrição do Projeto
 
