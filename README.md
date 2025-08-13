@@ -3,7 +3,7 @@
     alt="GitHub Stats" 
     height="30" 
     style="padding-right: 10px;" 
-    src="https'://img.shields.io/badge/status-conclu%C3%ADdo-green'" 
+    src= "https://img.icons8.com/?size=100&id=104315&format=png&color=000000"
     />
 
 ---
