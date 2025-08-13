@@ -1,9 +1,10 @@
 # Trabalho de Matemática Discreta
 <img 
     alt="GitHub Stats" 
-    height="30" 
+    height="30"
+    weight = "100"
     style="padding-right: 10px;" 
-    src= "https://img.icons8.com/?size=100&id=104315&format=png&color=000000"
+    src= "https://img.icons8.com/?size=100&id=rhvNl73R40Fg&format=png&color=000000"
     />
 
 ---
