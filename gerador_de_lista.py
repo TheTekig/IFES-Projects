@@ -11,16 +11,15 @@ def gen_archive(qtd_tarefas,extencao, pasta):
 
 def create_archive(nome_arquivo,pasta):
     try:
-        if os.path.exists(pasta):
-            nome_arquivo = os.path.join(pasta, nome_arquivo)
-            with open (nome_arquivo, "w"):
-                pass  
+        nome_arquivo = os.path.join(pasta, nome_arquivo)
+        with open (nome_arquivo, "w"):
+            pass  
     except Exception:
         print(f"Não foi possivel criar {nome_arquivo}")            
 
 def gen_folder(nome_pasta):
     try:
-        os.makedirs(nome_pasta, exist_ok=True)
+        os.makedirs(nome_pasta)
     except Exception:
         print(f"Pasta {nome_pasta} não pode ser criada!")
 
