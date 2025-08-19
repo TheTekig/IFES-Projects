@@ -1,3 +1,5 @@
+#region Funções de Conjuntos
+
 def uniao(conjuntoA, conjuntoB):
     uniao = []
     for elementoA in conjuntoA:
@@ -57,6 +59,21 @@ def produto_cartesiano(conjuntoA, conjuntoB):
     
     return pro_cartesiano 
     
+def definindo_conjuntos(conjuntoA, conjuntoB):
+
+    conjuntoA.clear()
+    conjuntoB.clear()
+
+    print("\n\t Definir Conjuntos")
+    vezes_a_repetir = repeticao("A")
+    entrada_de_dados("A", vezes_a_repetir, conjuntoA)
+    print("\n")
+    vezes_a_repetir = repeticao("B")
+    entrada_de_dados("B", vezes_a_repetir, conjuntoB)
+
+#endregion
+
+#region Validações/Entradas 
 
 def validar_numero_inteiro(numero):
     try:
@@ -84,6 +101,8 @@ def repeticao(entrada):
 
     return int(numero)
 
+ #endregion
+
 def menu():
     print("\n\t\tMENU\n")
     print("\t1. União")
@@ -96,70 +115,60 @@ def menu():
     print(". Digite outra opção não listada para sair .")
 
 def main():
-
+    
     conjunto_A = []
     conjunto_B = []
     
-    while True:
+    definindo_conjuntos(conjunto_A, conjunto_B)
 
-        print("\n\t Definir Conjuntos")
-        vezes_a_repetir = repeticao("A")
-        entrada_de_dados("A", vezes_a_repetir, conjunto_A)
-        print("\n")
-        vezes_a_repetir = repeticao("B")
-        entrada_de_dados("B", vezes_a_repetir, conjunto_B)
+    while True:
 
         menu()
         op = input("OP:" )
-        match int(op):
+        match op:
 
-            case 1:
+            case "1":
                 print("\n\tUnião dos Conjuntos")
                 conjunto = uniao(conjunto_A, conjunto_B)
                 print(conjunto)
                 
 
-            case 2:
+            case "2":
                 print("\n\tInterseção dos Conjuntos")
                 conjunto = intersecao(conjunto_A, conjunto_B)
                 print(conjunto)
                 
 
-            case 3:
+            case "3":
                 print("\n\tDiferença A-B dos Conjuntos")
                 conjunto = diferenca_A(conjunto_A, conjunto_B)
                 print(conjunto)
                 
 
-            case 4:
+            case "4":
                 print("\n\tDiferença B-A dos Conjuntos")
                 conjunto = diferenca_B(conjunto_A, conjunto_B)
                 print(conjunto)
                 
 
-            case 5:
+            case "5":
                 print("\n\tDiferença Simétrica dos Conjuntos")
                 conjunto = diferenca_simetrica(conjunto_A, conjunto_B)
                 print(conjunto)
                 
 
-            case 6:
+            case "6":
                 print("\n\tProduto Cartesiano dos Conjuntos")
                 conjunto = produto_cartesiano(conjunto_A, conjunto_B)
                 print(conjunto)
                 
 
-            case 7:
+            case "7":
                 print("\n\tRedefinindo Conjuntos")
+                definindo_conjuntos(conjunto_A, conjunto_B)
                 
-
             case _:
+                print("Saindo...")
                 break 
             
-            
-
-
-
-
-
 main()
