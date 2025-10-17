@@ -1,7 +1,8 @@
 # IFES Projects
-
-<img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow"> 
-<img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white">
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow"> 
+  <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white">
+</p>
 
 ---
 
