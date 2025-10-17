@@ -1,11 +1,7 @@
-# SEGUNDO PERIODO S.I.
-<img 
-    alt="GitHub Stats" 
-    height="30"
-    weight = "100"
-    style="padding-right: 10px;" 
-    src= "https://img.icons8.com/?size=100&id=rhvNl73R40Fg&format=png&color=000000"
-    />
+# IFES Projects
+
+<img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow"> 
+<img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white">
 
 ---
 
