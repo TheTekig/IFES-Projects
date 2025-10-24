@@ -19,13 +19,13 @@ def gostoduplo(preferencia1, preferencia2, lista):
 def main():
     banco_de_pessoas = ["Caio Ventura","Renan Toledo","Ícaro Dantas","Mauro Silveira","Lucas Barreto","Lara Mendonça","Júlia Vasconcelos","Tainá Ribeiro","Bianca Salles","Helena Prado",
                         "Alex Lima","Sam Rocha","Cris Andrade","Dani Souza","Rafa Martins","Elvion Thar","Lysara Venn","Kaedon Dral","Nyssa Toren","Zarek Morn"]
-    
 
     preferem_cafe = (random.choices(banco_de_pessoas, k=10))
  
     preferem_cha = (random.choices(banco_de_pessoas, k=10))
 
     preferem_suco = (random.choices(banco_de_pessoas, k=10))
+
     print("Somente Cafe")
     final = gostounico(preferem_cafe, preferem_cha, preferem_suco)
     print(final)
