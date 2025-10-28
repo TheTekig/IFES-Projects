@@ -107,7 +107,7 @@ int main(){
     int tamanho1=0, tamanho2=0, tamanho3=0; // Tamanhos iniciais dos conjuntos
     int opcao, conjuntoEscolhido; // Opcao do menu e conjunto escolhido para operacoes
 
-    do{
+    do{                 //Um loop para o menu continuar aparecendo ate o usuario escolher sair
 
         //       MENU
 
