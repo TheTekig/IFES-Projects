@@ -31,12 +31,17 @@ def menu():
 def main():
     banco_de_pessoas = ["Caio Ventura","Renan Toledo","Ícaro Dantas","Mauro Silveira","Lucas Barreto","Lara Mendonça","Júlia Vasconcelos","Tainá Ribeiro","Bianca Salles","Helena Prado",
                         "Alex Lima","Sam Rocha","Cris Andrade","Dani Souza","Rafa Martins","Elvion Thar","Lysara Venn","Kaedon Dral","Nyssa Toren","Zarek Morn"]
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6d3e7331c3cc88cc863351e7f34579316f965f07
     preferem_cafe = (random.choices(banco_de_pessoas, k=10))
  
     preferem_cha = (random.choices(banco_de_pessoas, k=10))
 
     preferem_suco = (random.choices(banco_de_pessoas, k=10))
+<<<<<<< HEAD
     
     while True:
         menu()
@@ -44,6 +49,12 @@ def main():
         while op.isnumeric() == False or int(op) < 0 or int(op) > 5:
             op = input("Escolha uma opção válida:\n")
         op = int(op)
+=======
+
+    print("Somente Cafe")
+    final = gostounico(preferem_cafe, preferem_cha, preferem_suco)
+    print(final)
+>>>>>>> 6d3e7331c3cc88cc863351e7f34579316f965f07
 
         while op != 0:
             if op == 1:
