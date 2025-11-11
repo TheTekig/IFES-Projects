@@ -22,6 +22,43 @@ typedef struct Conta {
 
 #pragma endregion
 
+void salvarContas(Conta *contas, int tamanho){
+    FILE *file = fopen("contas.txt", "w");
+if (!file){
+    printf("Erro ao abrir o arquivo!\n");
+    return;
+}
+for (int i = 0; i < tamanho; i++) {
+    fprintf(file, "%s;%s;%s;%s;%.2f\n", 
+        contas[i].numero,
+        contas[i].cliente.nome,
+        contas[i].cliente.telefone,
+        contas[i].cliente.email,
+        contas[i].saldo);
+}
+fclose(file);
+printf("Contas Salvas com Sucesso!\n");
+}
+
+int carregarContas(Conta *contas){
+    FILE *file = fopen("contas.txt", "r");
+    if (!file){
+        printf("Nenhum arquivo encontrado, iniciando vazio.\n");
+        return 0;
+    }
+    int count = 0;
+    while (fscanf(file, "%10[^;];%99[^;];%14[^;];%99[^;];%f\n",
+                  contas[count].numero,
+                  contas[count].cliente.nome,
+                  contas[count].cliente.telefone,
+                  contas[count].cliente.email,
+                  &contas[count].saldo) == 5) {
+        count++;
+    }
+    fclose(file);
+    printf("%d contas carregadas do arquivo.\n", count);
+    return count;
+}
 #pragma region Funções Auxiliares
 
 void limparBuffer() {
@@ -280,7 +317,7 @@ int main() {
     Conta contas[MAX];
     int tamanho = 0;
     int op;
-
+    tamanho = carregarContas(contas);
     do {
         op = menu();
         switch (op) {
@@ -307,6 +344,7 @@ int main() {
                 break;
             case 0:
                 printf("Saindo...\n");
+                salvarContas(contas, tamanho);
                 break;
             default:
                 printf("Opção inválida!\n");
